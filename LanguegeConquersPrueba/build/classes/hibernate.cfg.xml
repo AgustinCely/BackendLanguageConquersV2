@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/pruebaDB</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping resource="co/edu/usbcali/modelo/MissionState.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/Avatar.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/StudentProgrammingLevel.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/Mission.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/ProgrammingLevel.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/MissionLevel.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/Language.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/CourseLanguage.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/MissionType.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/Recompense.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/StudentMissionHomework.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/StudentLanguage.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/Course.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/Rol.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/Note.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/Student.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/Teacher.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/RecompenseStudent.hbm.xml"/>
+        <mapping resource="co/edu/usbcali/modelo/CourseMission.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

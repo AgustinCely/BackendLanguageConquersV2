@@ -63,14 +63,14 @@ public class StudentMapper implements IStudentMapper{
 	@Override
 	public List<StudentDTO> listStudentToStudenDTO(List<Student> students) throws Exception {
 		try {
-			List<StudentDTO> teacherDTOs = new ArrayList<StudentDTO>();
+			List<StudentDTO> studentDTOs = new ArrayList<StudentDTO>();
 			
 			for (Student student : students) {
 				StudentDTO studentDTO = studentToStudentDTO(student);
 				
-				teacherDTOs.add(studentDTO);
+				studentDTOs.add(studentDTO);
 			}
-			return teacherDTOs;
+			return studentDTOs;
 		} catch (Exception e) {
 			throw e;
 		}

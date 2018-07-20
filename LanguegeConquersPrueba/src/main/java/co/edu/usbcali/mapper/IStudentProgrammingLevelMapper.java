@@ -1,0 +1,14 @@
+package co.edu.usbcali.mapper;
+
+import java.util.List;
+
+import co.edu.usbcali.dto.StudentProgrammingLevelDTO;
+import co.edu.usbcali.modelo.StudentProgrammingLevel;
+
+public interface IStudentProgrammingLevelMapper {
+
+	public StudentProgrammingLevelDTO studentProgrammingLevelToStudentProgrammingLevelDTO(StudentProgrammingLevel studentProgrammingLevel) throws Exception;
+	public StudentProgrammingLevel studentProgrammingLevelDTOToStudentProgrammingLevel(StudentProgrammingLevelDTO studentProgrammingLevelDTO) throws Exception;
+	public List<StudentProgrammingLevelDTO> listStudentProgrammingLevelToStudentProgrammingLevelDTO(List<StudentProgrammingLevel> studentProgrammingLevels) throws Exception;
+	public List<StudentProgrammingLevel> listStudentProgrammingLevelDTOToStudentProgrammingLevel(List<StudentProgrammingLevelDTO> studentProgrammingLevelDTOs) throws Exception;
+}

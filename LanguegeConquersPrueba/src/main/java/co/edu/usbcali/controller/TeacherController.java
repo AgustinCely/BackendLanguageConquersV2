@@ -47,6 +47,7 @@ public class TeacherController {
 			Teacher teacher = teacherMapper.teacherDTOtoTeacher(teacherDTO);
 			teacherLogica.crearTeacher(teacher);
 	}
+	
 	@RequestMapping(value="/modificar",method=RequestMethod.PUT)
 	public void modificar(@RequestBody TeacherDTO teacherDTO) throws Exception {
 		Teacher teacher = teacherMapper.teacherDTOtoTeacher(teacherDTO);

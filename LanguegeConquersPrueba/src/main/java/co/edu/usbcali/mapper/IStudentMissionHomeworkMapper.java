@@ -1,0 +1,14 @@
+package co.edu.usbcali.mapper;
+
+import java.util.List;
+
+import co.edu.usbcali.dto.StudentMissionHomeworkDTO;
+import co.edu.usbcali.modelo.StudentMissionHomework;
+
+public interface IStudentMissionHomeworkMapper {
+
+	public StudentMissionHomeworkDTO studentMissionHomeworkToStudentMissionHomeworkDTO(StudentMissionHomework studentMissionHomework) throws Exception;
+	public StudentMissionHomework studentMissionHomeworkDTOToStudentMissionHomework(StudentMissionHomeworkDTO studentMissionHomeworkDTO) throws Exception;
+	public List<StudentMissionHomeworkDTO> listStudentMissionHomeworkToStudentMissionHomeworkDTO(List<StudentMissionHomework> studentMissionHomeworks) throws Exception;
+	public List<StudentMissionHomework> listStudentMissionHomeworkDTOToStudentMissionHomework(List<StudentMissionHomeworkDTO> studentMissionHomeworkDTOs) throws Exception;
+}

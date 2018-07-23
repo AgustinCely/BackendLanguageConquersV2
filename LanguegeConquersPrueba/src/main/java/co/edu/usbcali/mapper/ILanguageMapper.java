@@ -7,8 +7,8 @@ import co.edu.usbcali.modelo.Language;
 
 public interface ILanguageMapper {
 	
-	public LanguageDTO studentToStudentDTO(Language language) throws Exception;
-	public Language studentDTOToStudent(LanguageDTO languageDTO) throws Exception;
-	public List<LanguageDTO> listStudentToStudentDTO(List<Language> languages) throws Exception;
-	public List<Language> listStudentDTOToStudent(List<LanguageDTO> languageDTOs) throws Exception;
+	public LanguageDTO languageToLanguageDTO(Language language) throws Exception;
+	public Language languageDTOToLanguage(LanguageDTO languageDTO) throws Exception;
+	public List<LanguageDTO> listLanguageToLanguageDTO(List<Language> languages) throws Exception;
+	public List<Language> listLanguageDTOToLanguage(List<LanguageDTO> languageDTOs) throws Exception;
 }

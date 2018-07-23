@@ -58,6 +58,5 @@ public class TeacherController {
 	public void eliminar(@PathVariable("id") Integer id) throws Exception{
 		Teacher teacher = teacherLogica.consultarPorIdTeacher(id);
 		teacherLogica.eliminarTeacher(teacher);
-		
 	}
 }

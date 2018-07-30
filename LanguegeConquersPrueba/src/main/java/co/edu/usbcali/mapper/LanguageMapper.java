@@ -3,11 +3,16 @@ package co.edu.usbcali.mapper;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import co.edu.usbcali.dto.LanguageDTO;
 import co.edu.usbcali.modelo.Language;
 
+
+@Component
+@Scope("singleton")
 public class LanguageMapper implements ILanguageMapper{
 
 	@Transactional(readOnly=true)

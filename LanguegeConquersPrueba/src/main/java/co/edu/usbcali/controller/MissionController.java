@@ -3,16 +3,21 @@ package co.edu.usbcali.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import co.edu.usbcali.dto.MissionDTO;
 import co.edu.usbcali.logica.IMissionLogica;
 import co.edu.usbcali.mapper.IMissionMapper;
 import co.edu.usbcali.modelo.Mission;
 
+@RestController
+@RequestMapping("/missionRest")
+@CrossOrigin(origins="*")
 public class MissionController {
 
 	@Autowired

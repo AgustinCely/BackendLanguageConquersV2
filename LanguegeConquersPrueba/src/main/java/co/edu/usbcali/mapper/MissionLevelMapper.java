@@ -3,11 +3,16 @@ package co.edu.usbcali.mapper;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import co.edu.usbcali.dto.MissionLevelDTO;
 import co.edu.usbcali.modelo.MissionLevel;
 
+
+@Component
+@Scope("singleton")
 public class MissionLevelMapper implements IMissionLevelMapper{
 
 	@Transactional(readOnly = true)

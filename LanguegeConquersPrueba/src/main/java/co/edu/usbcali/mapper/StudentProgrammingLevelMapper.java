@@ -3,11 +3,16 @@ package co.edu.usbcali.mapper;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import co.edu.usbcali.dto.StudentProgrammingLevelDTO;
 import co.edu.usbcali.modelo.StudentProgrammingLevel;
 
+
+@Component
+@Scope("singleton")
 public class StudentProgrammingLevelMapper implements IStudentProgrammingLevelMapper{
 
 	@Transactional(readOnly = true)

@@ -3,6 +3,7 @@ package co.edu.usbcali.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,7 @@ import co.edu.usbcali.modelo.Avatar;
 
 @RestController
 @RequestMapping("/avatarRest")
+@CrossOrigin(origins="*")
 public class AvatarController {
 	
 	@Autowired
@@ -52,7 +54,7 @@ public class AvatarController {
 		avatarLogica.modificarAvatar(avatar);
 	}
 	
-	@RequestMapping(value="/eliminarTeacher/{id}",method=RequestMethod.DELETE)
+	@RequestMapping(value="/eliminarAvatar/{id}",method=RequestMethod.DELETE)
 	public void eliminarAvatar(@PathVariable("id") Integer id) throws Exception{
 		Avatar avatar = avatarLogica.consultarPorIdAvatar(id);
 		avatarLogica.eliminarAvatar(avatar);
